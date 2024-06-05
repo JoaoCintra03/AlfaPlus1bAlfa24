@@ -74,6 +74,7 @@ header{
    top: -150px;
    position: relative;
    opacity: 0.2;
+   background-position: center;
 }
 h1{
    text-align: center;
@@ -143,7 +144,46 @@ footer i{
 .esconder-mobile{
 display: block;
 }
-@media(max-width: 400px) {
+@media(max-width: 1200px) {
+   .col{
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .destaques .titulo {
+      width: calc(100% - 10px);
+   } 
+   
+   .dropdown {
+      width: calc(100% - 20px);
+      padding: 10px;
+      background-color: #f4f4f4;
+      text-align: center;
+   }
+   .dropdown img{
+      max-width: 235px;
+   }
+   .dropdown i{
+      font-size: 40px;
+      display: inline;
+      padding: 15px;
+      position: absolute;
+   }
+   .dropdown-content{
+      display: none;
+   }
+   .dropdown:hover .dropdown-content{
+      display: block;
+   }
+   .dropdown li a{
+      font-size: 22px;
+      text-decoration: none;
+      color: #000;
+      line-height: 30px;
+   }
+   .dropdown li{
+      border-top: 1px solid #000;
+      padding: 10px;
+   }  
    .mostrar-mobile{
       display: block;
    }
@@ -166,5 +206,14 @@ display: block;
       text-align: center;
    }
 }
-
-    
+    @media (min-width: 980px) and (max-width: 1199px) {
+      .menu-moblie{
+         display: none;
+      }
+      .esconder-mobile{
+         display: block;
+      }
+      .col{
+         width: 49;
+      }
+    }
